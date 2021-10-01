@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="home.css"> -->
+    </head>
+    <body bgcolor="#a3cfb4">
+        <style>
+            input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                max-width: 100%;
+            }
+  
+            input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+  
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+  
+            div {
+                border-radius: 5px;
+                background-color: #f5f0f0de;
+                padding: 20px;
+                max-width: 40%;
+            } 
+
+            body {
+                background-image: url("static/hh1.jpg"); /* The image used */
+                background-color: #cccccc; /* Used if the image is unavailable */
+                height: 500px; /* You must set a specified height */
+                background-position: center; /* Center the image */
+                background-repeat: no-repeat; /* Do not repeat the image */
+                background-size: cover;
+            }
+    
+            h1 {
+                color: rgb(15, 15, 15);
+                display: block;
+                font-size: 4em;
+                margin-top: 0.67em;
+                margin-bottom: 0.67em;
+                margin-left: 0;
+                margin-right: 0;
+                font-weight: bold;
+            }
+            h2 {
+                color: rgb(15, 15, 15);
+                display: block;
+                font-size: 3em;
+                margin-top: 0.67em;
+                margin-bottom: 0.67em;
+                margin-left: 0;
+                margin-right: 0;
+                font-weight: bold;
+            }
+            a{
+                color: rgb(253, 250, 250);
+                font-size: 20px;
+                background-color: #e91616;
+            }
+
+            #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+            }
+
+            #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            }
+
+            #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+            #customers tr:hover {background-color: #ddd;}
+
+            #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+            }
+
+            #btn{
+            background-color: #04AA6D;
+            border: 2px solid #04AA6D;
+            }
+
+            
+            
+        </style>
+        <center>
+            <h1> PREDICTION : </h1>
+        {%if data == 0%}
+        <!-- <div class="container" style="opacity:0.9;" >
+        <h1>Single Family Detached House</h1>
+        <img src='static/single fam.jpg'>
+        </div> -->
+        <div class="polaroid">
+            <img src="static/single fam.jpg" alt="5 Terre" style="width:100%">
+            <h2>Single Family Detached House</h2>
+            <p> A single detached dwelling contains only one dwelling unit and is completely separated by open space on all sides from any other structure, except its own garage or shed.</p>
+        </div>
+        {%endif%}
+
+        {%if data == 1%}
+        <!-- <div class="container" style="opacity:0.9;" >
+        <h1>Castle</h1>
+        <img src='static/castle.jpg'>
+        </div> -->
+        <div class="polaroid">
+            <img src="static/castle.jpg" alt="5 Terre" style="width:100%">
+            <h2>Castle</h2>
+            <p>castle as 'a large building, typically of the medieval period, fortified against attack with thick walls, battlements, towers, and often a moat'.</p>
+        </div>
+        {%endif%}
+
+        {%if data == 2%}
+        <!-- <h1>Apartment</h1>
+        <img src='static/apartment.jpg'> -->
+        <div class="polaroid">
+            <img src="static/apartment.jpg" alt="5 Terre" style="width:100%">
+            <h2>Apartment</h2>
+            <p>The term "apartment" can be generically applied to any residential unit inside a building. The building can be a house, townhouse, large residential building, and even condominium high-rise where owners sublet their units</p>
+        </div>
+        {%endif%}
+
+        {%if data == 3%}
+        <!-- <h1>Coach House</h1>
+        <img src='static/coah house.jpg'> -->
+        <div class="polaroid">
+            <img src="static/coah house.jpg" alt="5 Terre" style="width:100%">
+            <h2>Coach House</h2>
+            <p>Coach House is a small building, usually part of an estate or adjacent to a main house, used for housingcoaches, carriages, and other vehicles..</p>
+        </div>
+        {%endif%}
+
+        {%if data == 4%}
+        <!-- <h1>Bungalow</h1>
+        <img src='static/bangalow.jpg'> -->
+        <div class="polaroid">
+            <img src="static/bangalow.jpg" alt="5 Terre" style="width:100%">
+            <h2>Bungalow</h2>
+            <p>A bungalow is a style of house or cottage that is typically either a single story or has a second, half, or partial story, that is built into a sloped roof.</p>
+        </div>
+        {%endif%}
+
+        {%if data == 5%}
+        <!-- <h1>Cabin</h1>
+        <img src='static/cabin.jpg'> -->
+        <div class="polaroid">
+            <img src="static/cabin.jpg" alt="5 Terre" style="width:100%">
+            <h2>Cabin</h2>
+            <p>Cabin house is a small house or cottage (usually of simple design and construction), cabins come in many shapes and sizes. typically they are a modest, often cosy dwelling, typically in a rural or semi-rural location, found in various climates..</p>
+        </div>
+        {%endif%}
+        
+        <br><br>
+        <br><br>
+                        
+        <h2 id="mn">House type prediction summary Table</h2>
+    
+        <table id="customers">
+            <tr>
+                <th>Column name</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>No of bedrooms</td>
+                <td>{{ bedrooms }}</td>
+            </tr>
+            <tr>
+                <td>No of bathrooms</td>
+                <td>{{ bathrooms }}</td>
+            </tr>
+            <tr>
+                <td>sqft_living value</td>
+                <td>{{ living }}</td>
+            </tr>
+            <tr>
+                <td>sqft_lot value</td>
+                <td>{{ lot }}</td>
+            </tr>
+            <tr>
+                <td>sqft_above value</td>
+                <td>{{ above }}</td>
+            </tr>
+            <tr>
+                <td>sqft_basement value</td>
+                <td>{{ basement }}</td>
+            </tr>
+            <tr>
+                <td>No of floors</td>
+                <td>{{ floors }}</td>
+            </tr>
+
+        </table>
+
+
+
+        <br><br>
+        <a href='/' class="btn btn-primary" id="btn">go back to home page</a><br>
+        </center>
+    </body>
+</html>

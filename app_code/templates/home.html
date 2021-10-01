@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="home.css"> -->
+    </head>
+    <body>
+        <style>
+            input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                max-width: 100%;
+            }
+  
+            input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+  
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+  
+            div {
+                border-radius: 5px;
+                background-color: #646161de;
+                padding: 20px;
+                max-width: 40%;
+            } 
+
+            body {
+                background-image: url("static/hh1.jpg"); /* The image used */
+                background-color: #cccccc; /* Used if the image is unavailable */
+                height: 500px; /* You must set a specified height */
+                background-position: center; /* Center the image */
+                background-repeat: no-repeat; /* Do not repeat the image */
+                background-size: cover;
+            }
+    
+            h1 {
+                color: rgb(15, 15, 15);
+                display: block;
+                font-size: 4em;
+                margin-top: 0.67em;
+                margin-bottom: 0.67em;
+                margin-left: 0;
+                margin-right: 0;
+                font-weight: bold;
+            }
+
+            #btn{
+            background-color: #04AA6D;
+            border: 2px solid #04AA6D;
+            }
+            
+        </style>
+        
+        <center>
+            <h1>House Type Prediction</h1><br>
+
+            <div class="container" style="opacity:0.9;" >
+
+                <form action="{{url_for('predict_type')}}"method="POST" class="form_css">
+
+                    
+                    <label class="sr-only">bedrooms value:</label>
+                    <input type="text", name='val12', placeholder="Enter no of bedrooms" required>
+                    <br>
+                    
+                    <label class="sr-only" for="pwd">bathrooms value:</label>
+                    <input type="text", name='val13', placeholder="Enter no of bathrooms" required>
+                    <br>
+                    
+                    <label class="sr-only" >sqft_living value:</label>
+                    <input type="text", name='val14', placeholder="Enter sqft_living value" required>
+                    <br>
+                    
+                    <label class="sr-only" >sqft_lot value:</label>
+                    <input type="text", name='val15', placeholder="Enter sqft_lot value" required>
+                    <br>
+                    
+                    <label class="sr-only" >sqft_above value:</label>
+                    <input type="text", name='val16', placeholder="Enter sqft_above value" required>
+                    <br>
+                    
+                    <label class="sr-only" >sqft_basement value:</label>
+                    <input type="text", name='val17', placeholder="Enter sqft_basement value" required>
+                    <br>
+                    
+                    <label class="sr-only" >floors value:</label>
+                    <input type="text", name='val18', placeholder="Enter no of floors" required>
+                    <br>
+
+                    <input type="submit" class="btn btn-default" value="Predict">
+                                   
+                <!-- bedrooms value: <input type="text", name='val12', placeholder="enter value 2"><br><br>
+                bathrooms value: <input type="text", name='val13', placeholder="enter value 3"><br><br>
+                sqft_living value: <input type="text", name='val14', placeholder="enter value 4"><br><br>
+                sqft_lot value: <input type="text", name='val15', placeholder="enter value 5"><br><br>
+                sqft_above value: <input type="text", name='val16', placeholder="enter value 11"><br><br>
+                sqft_basement value: <input type="text", name='val17', placeholder="enter value 12"><br><br>
+                floors value: <input type="text", name='val18', placeholder="enter value 6"><br><br><br><br> -->
+
+                <!-- <input type="submit", value="predict"> -->
+                <!-- <button type="submit" class="btn btn-default">Predict</button> -->
+                </form>
+            </div><br>
+            <br><br><br>
+        <a href='/' class="btn btn-primary" id="btn">go back to home page</a><br>
+        </center>
+    </body>
+</html>
