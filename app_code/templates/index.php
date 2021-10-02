@@ -1,2 +1,1 @@
-<?php include("new.html"); ?>
-
+<?php include_once("new.html"); ?>
