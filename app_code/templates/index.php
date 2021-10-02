@@ -1,5 +1,5 @@
-<?php include("new.html")?>
-<?php include("after.html")?>
-<?php include("chart.html")?>
-<?php include("home.html")?>
-<?php include("home1.html")?>
+<?php include_once("new.html")?>
+<?php include_once("after.html")?>
+<?php include_once("chart.html")?>
+<?php include_once("home.html")?>
+<?php include_once("home1.html")?>
