@@ -1,1 +1,1 @@
-<?php include("new.html")?>
+<?php include("new.html"); ?>
